@@ -25,7 +25,7 @@ const Home = () => {
       </main>
 
       <footer className={styles.footer}>
-        <p>Made by <span>Flip</span></p>
+        <p>Made by <a href="https://github.com/JstFlip">Flip</a></p>
       </footer>
     </div>
   )

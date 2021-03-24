@@ -6,7 +6,12 @@ dayjs.extend(duration)
 
 const getTime = (endDateString) =>{
     const diff = dayjs.duration(dayjs(endDateString).diff(dayjs()))
-    return diff.format(`${Math.floor(diff.asDays())}:HH:mm:ss`)
+    return diff.format(`HH:mm:ss`)
+}
+
+const getDays = (endDateString) =>{
+    const diff = dayjs.duration(dayjs(endDateString).diff(dayjs()))
+    return diff.format(`${Math.floor(diff.asDays())}`)
 }
 
 const Timer = () => {
@@ -23,20 +28,24 @@ const Timer = () => {
     return (
         <>
             <div className={styles.card}>
-                <h3>Didaktický test ČJ</h3>
-                <p>{ getTime(new Date(1621893600000)) }</p>
-            </div>
-            <div className={styles.card}>
-                <h3>Didaktický test AJ</h3>
-                <p>{ getTime(new Date(1621807200000)) }</p>
-            </div>
-            <div className={styles.card}>
                 <h3>Praktické zkoušky</h3>
-                <p>{ getTime(new Date(1620597600000)) }</p>
+                <h2>{ getDays(new Date('2021-05-10')) } <span>days</span></h2>
+                <p>{ getTime(new Date('2021-05-10')) }</p>
             </div>
             <div className={styles.card}>
                 <h3>Ústní zkoušky</h3>
-                <p>{ getTime(new Date(1622498400000)) }</p>
+                <h2>{ getDays(new Date('2021-06-01')) } <span>days</span></h2>
+                <p>{ getTime(new Date('2021-06-01')) }</p>
+            </div>
+            <div className={styles.card}>
+                <h3>Didaktický test AJ</h3>
+                <h2>{ getDays(new Date('2021-05-24')) } <span>days</span></h2>
+                <p>{ getTime(new Date('2021-05-24')) }</p>
+            </div>
+            <div className={styles.card}>
+                <h3>Didaktický test ČJ</h3>
+                <h2>{ getDays(new Date('2021-05-25')) } <span>days</span></h2>
+                <p>{ getTime(new Date('2021-05-25')) }</p>
             </div>
         </>
     )

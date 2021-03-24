@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(26, 26, 26);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.footer span {
+.footer a {
   font-weight: bold;
 }
 
@@ -44,6 +44,7 @@
 .title,
 .description {
   text-align: center;
+  padding: 0 1rem;
 }
 
 .description {
@@ -71,6 +72,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  min-width: 169.58px;
 }
 
 .card:hover,
@@ -85,15 +87,15 @@
   font-size: 1.5rem;
 }
 
+.card h2 span {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
 .card p {
+  color: rgb(158, 158, 158);
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
