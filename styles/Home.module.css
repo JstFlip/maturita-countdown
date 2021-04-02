@@ -87,6 +87,10 @@
   font-size: 1.5rem;
 }
 
+.card h4 {
+  color: rgb(112, 112, 112);
+}
+
 .card h2 span {
   text-transform: uppercase;
   font-weight: normal;
@@ -96,6 +100,6 @@
 .card p {
   color: rgb(158, 158, 158);
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
