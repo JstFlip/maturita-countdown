@@ -73,6 +73,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   min-width: 169.58px;
+  min-height: 182px;
 }
 
 .card:hover,
@@ -102,4 +103,14 @@
   margin: 0;
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+.done {
+  border-color: rgb(65, 65, 65);
+  color: rgb(65, 65, 65);
+}
+
+.card:hover.done {
+  border-color: rgb(65, 65, 65);
+  color: rgb(65, 65, 65);
 }
