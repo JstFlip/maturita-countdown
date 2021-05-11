@@ -27,13 +27,11 @@ const Timer = () => {
     }, [])
     return (
         <>
-            <div className={styles.card}>
+            <div className={`${styles.card} ${styles.done}`}>
                 <h3>Praktické zkoušky</h3>
-                <h2>{ getDays(new Date('2021-05-10')) } <span>days</span></h2>
-                <p>{ getTime(new Date('2021-05-10')) }</p>
-                <h4>2021/05/10</h4>
+                <h2>Done</h2>
             </div>
-            <div className={styles.card}>
+            <div className={`${styles.card}`}>
                 <h3>Ústní zkoušky</h3>
                 <h2>{ getDays(new Date('2021-06-01')) } <span>days</span></h2>
                 <p>{ getTime(new Date('2021-06-01')) }</p>
