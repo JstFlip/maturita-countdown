@@ -39,15 +39,11 @@ const Timer = () => {
             </div>
             <div className={`${styles.card} ${styles.done}`}>
                 <h3>Didaktický test AJ</h3>
-                <h2>{ getDays(new Date('2021-05-24')) } <span>days</span></h2>
-                <p>{ getTime(new Date('2021-05-24')) }</p>
-                <h4>2021/05/24</h4>
+                <h2>Done</h2>
             </div>
             <div className={`${styles.card} ${styles.done}`}>
                 <h3>Didaktický test ČJ</h3>
-                <h2>{ getDays(new Date('2021-05-25')) } <span>days</span></h2>
-                <p>{ getTime(new Date('2021-05-25')) }</p>
-                <h4>2021/05/25</h4>
+                <h2>Done</h2>
             </div>
         </>
     )
